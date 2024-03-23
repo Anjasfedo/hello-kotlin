@@ -1,27 +1,18 @@
 
+fun getGreeting() = "Hello Kotlin"
 
-var greeting: String? = null
-const val name: String = "Anjas"
+fun sayHello() {
+    println(getGreeting())
+}
+
+fun saySomething(greeting: String, something: String) = println("$greeting $something")
 
 fun main() {
-//    greeting = "Hello"
+    println("Hello Kotlin")
 
-//    if (greeting != null) {
-//        println(greeting)
-//    } else {
-//        println("Hi")
-//    }
+    println(getGreeting())
 
-//    when (greeting) {
-//        null -> println("Hi")
-//        else -> println(greeting)
-//    }
+    sayHello()
 
-//    val greetingToPrint = if(greeting != null) greeting else "Hi"
-    val greetingToPrint = when (greeting) {
-        null -> "Hi"
-        else -> greeting
-    }
-    println(greetingToPrint)
-    println(name)
+    saySomething("Hewro", "World")
 }
