@@ -1,18 +1,20 @@
 
-fun getGreeting() = "Hello Kotlin"
-
-fun sayHello() {
-    println(getGreeting())
-}
 
 fun saySomething(greeting: String, something: String) = println("$greeting $something")
 
 fun main() {
-    println("Hello Kotlin")
+    val interestingThings = arrayOf("Kotlin", "Programming", "Manhua")
 
-    println(getGreeting())
+    println(interestingThings.size)
 
-    sayHello()
+    println(interestingThings[0])
+    println(interestingThings.get(0))
 
-    saySomething("Hewro", "World")
+//    for (interestingThing in interestingThings) {
+//        println(interestingThing)
+//    }
+
+//    interestingThings.forEach { interestingThing -> println(interestingThing) }
+
+    interestingThings.forEachIndexed { index, interestingThing -> println("$interestingThing at index $index") }
 }
