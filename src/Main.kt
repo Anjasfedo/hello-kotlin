@@ -3,8 +3,9 @@ fun saySomething(greeting: String, vararg somethings: String) {
     somethings.forEach { something -> println("$greeting $something") }
 }
 
-fun greetPerson(greeting: String, name: String) = println("$greeting $name")
+fun greetPerson(greeting: String = "Hewrooo", name: String) = println("$greeting $name")
 
 fun main() {
-    greetPerson(name = "Anjas", greeting = "Hiiii")
+    val interestingThings = arrayOf("Kotlin", "Programming", "Manhua")
+    saySomething(somethings = interestingThings, greeting = "Hii")
 }
