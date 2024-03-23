@@ -1,9 +1,11 @@
 
-fun main() {
-    val name: String = "Anjas"
-    println("Hello, $name!")
 
-    for (i in 1..5) {
-        println("i = $i")
-    }
+var greeting: String? = null
+val name: String = "Anjas"
+
+fun main() {
+    greeting = "Hello"
+
+    println(greeting)
+    println(name)
 }
