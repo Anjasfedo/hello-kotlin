@@ -10,4 +10,9 @@ fun main() {
 
     println(person.firstName)
     println(person.lastName)
+
+    person.userName = "Shadee"
+    person.userName = "Shadeessssss"
+
+    println(person.userName)
 }
