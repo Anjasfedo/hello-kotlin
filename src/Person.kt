@@ -1,9 +1,14 @@
-class Person(val firstName: String, val lastName: String) {
-//    val firstName: String = _firstName
-//    val lastName: String = _lastName
+class Person(val firstName: String = "Peter", val lastName: String = "Parker") {
 
 //    init {
-//        firstName = _firstName
-//        lastName = _lastName
+//        println("init 1")
+//    }
+//
+//    constructor(): this(firstName = "Peter", lastName = "Parker") {
+//        println("secondary constructor")
+//    }
+//
+//    init {
+//        println("init 2")
 //    }
 }

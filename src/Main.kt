@@ -6,7 +6,7 @@ fun saySomething(greeting: String, vararg somethings: String) {
 fun greetPerson(greeting: String = "Hewrooo", name: String) = println("$greeting $name")
 
 fun main() {
-    val person = Person(firstName = "Anjas", lastName = "Fedo")
+    val person = Person()
 
     println(person.firstName)
     println(person.lastName)
