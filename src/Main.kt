@@ -8,11 +8,5 @@ fun greetPerson(greeting: String = "Hewrooo", name: String) = println("$greeting
 fun main() {
     val person = Person()
 
-    println(person.firstName)
-    println(person.lastName)
-
-    person.userName = "Shadee"
-    person.userName = "Shadeessssss"
-
-    println(person.userName)
+    person.printInfo()
 }
