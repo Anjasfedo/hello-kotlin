@@ -1,8 +1,8 @@
-class Person(val firstName: String = "Peter", val lastName: String = "Parker") {
+class Person(private val firstName: String = "Peter", private val lastName: String = "Parker") {
 //    by default compile
 //    var have getter & setter
 //    val only getter
-    var userName: String? = null
+    protected var userName: String? = null
         set(value) {
             field = value
             println("the new username is $value")
@@ -12,7 +12,7 @@ class Person(val firstName: String = "Peter", val lastName: String = "Parker") {
             return field
         }
 
-    fun printInfo() {
+    internal fun printInfo() {
 //        val usernameToPrint = if (userName != null) userName else "no username"
         val usernameToPrint = userName ?: "no username"
 
