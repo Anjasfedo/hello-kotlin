@@ -6,6 +6,8 @@ fun saySomething(greeting: String, vararg somethings: String) {
 fun greetPerson(greeting: String = "Hewrooo", name: String) = println("$greeting $name")
 
 fun main() {
-    val interestingThings = arrayOf("Kotlin", "Programming", "Manhua")
-    saySomething(somethings = interestingThings, greeting = "Hii")
+    val person = Person(firstName = "Anjas", lastName = "Fedo")
+
+    println(person.firstName)
+    println(person.lastName)
 }
