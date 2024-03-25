@@ -7,7 +7,11 @@ interface PersonInfoProvider {
     }
 }
 
-class BasicInfoProvider : PersonInfoProvider {
+interface  SessionInfoProvider {
+    fun getSessionId(): String
+}
+
+class BasicInfoProvider : PersonInfoProvider, SessionInfoProvider {
     override val providerInfo: String
         get() = "BasicInfoProvider"
 
@@ -15,11 +19,16 @@ class BasicInfoProvider : PersonInfoProvider {
         super.printInfo(person)
         println("another statement")
     }
+
+    override fun getSessionId(): String {
+        return "Session"
+    }
 }
 
 fun main() {
     val provider = BasicInfoProvider()
 
     provider.printInfo(Person())
+    println(provider.getSessionId())
 }
 
